@@ -1,0 +1,125 @@
+/* Arka plan görseli */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('./images/backgammon.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Saydam katman */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Sonuç yazısı */
+.result {
+  font-size: 3rem;
+  font-family: 'Georgia', cursive;
+  margin-bottom: 2rem;
+}
+
+/* Zar alanları */
+.dice-row {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* Oyuncu adları */
+.player-name {
+  font-size: 1.3rem;
+  color: #1abc9c;
+  margin: 0.5rem 0 1rem;
+  font-weight: bold;
+}
+
+/* Zar görselleri */
+.dice {
+  width: 150px;
+  height: 150px;
+}
+
+/* Zar sallanma animasyonu (isteğe bağlı) */
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.dice.shaking {
+  animation: shake 0.5s infinite;
+}
+
+/* Kazanan oyuncunun kutusunu vurgulayan efekt */
+.winner {
+  animation: glow 1s infinite alternate;
+  border: 3px solid #f1c40f;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #f1c40f; }
+  to { box-shadow: 0 0 20px #f39c12; }
+}
+
+/* Buton */
+.roll-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 1rem auto;
+  display: inline-block;
+}
+
+.roll-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+  font-size: 1.1rem;
+  font-weight: bold;
+  opacity: 0.85;
+  margin-top: auto;
+}
+
+/* responsive ayarları*/
+@media (max-width: 600px) {
+  .dice-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .dice {
+    width: 100px;
+    height: 100px;
+  }
+
+  .result {
+    font-size: 2rem;
+  }
+
+  .roll-btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
