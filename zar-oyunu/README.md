@@ -4,11 +4,12 @@ Bu proje, React.js kullanılarak geliştirilen bir zar atma oyunudur. Kullanıc�
 
 ## 📸 Ekran Görüntüsü
 
-![Zar Oyunu](/images/ss1.jpg)
-![Zar Oyunu](/images/ss2.jpg)
-![Zar Oyunu](/images/ss3.jpg)
-![Zar Oyunu](/images/ss4.jpg)
-![Zar Oyunu](/images/ss5.jpg)
+![Zar Oyunu](/assets/ss1.jpg)
+![Zar Oyunu](/assets/ss2.jpg)
+![Zar Oyunu](/assets/ss3.jpg)
+![Zar Oyunu](/assets/ss4.jpg)
+![Zar Oyunu](/assets/ss5.jpg)
+
 
 ## 🚀 Özellikler
 
@@ -17,7 +18,6 @@ Bu proje, React.js kullanılarak geliştirilen bir zar atma oyunudur. Kullanıc�
 - 🏆 Kazanan oyuncu ekranda vurgulanır (parlama animasyonu)
 - 🎲 Zarlar rastgele atanır
 - 📱 Responsive tasarım (mobil uyumlu)
-- 😎 Player 2 kazandığında özel emoji gösterilir
 
 ## 🛠️ Kullanılan Teknolojiler
 
